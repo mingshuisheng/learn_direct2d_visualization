@@ -1,24 +1,25 @@
 import {Routes, Route, A} from "@solidjs/router";
 import {MainPage} from "./pages";
-import {AboutPage} from "./pages/about";
+import {DrawLine} from "./pages/draw_line.tsx";
+import {Box} from "@suid/material";
 
 function App() {
 
   return (
-    <div flex flex-col h-screen>
-      <div >
+    <Box displayRaw={"flex"} flexDirection={"column"} height={"100vh"}>
+      <Box displayRaw={"flex"} gap={"10px"} justifyContent={"center"} alignItems={"center"} fontSize={"30px"} mt={"20px"}>
         <A href="/">主页</A>
-        <A href="/about">关于</A>
-      </div>
-      <div flex-1 style={{
-        color: "#f0f"
+        <A href="/draw_line">画线</A>
+      </Box>
+      <Box sx={{
+        flex: "1"
       }}>
-          <Routes>
-            <Route path="/" component={MainPage} />
-            <Route path="/about" component={AboutPage} />
-          </Routes>
-      </div>
-    </div>
+        <Routes>
+          <Route path="/" component={MainPage}/>
+          <Route path="/draw_line" component={DrawLine}/>
+        </Routes>
+      </Box>
+    </Box>
 
   )
 }

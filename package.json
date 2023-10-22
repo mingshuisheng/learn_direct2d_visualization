@@ -10,11 +10,15 @@
   },
   "dependencies": {
     "@solidjs/router": "^0.8.3",
+    "@suid/icons-material": "^0.6.11",
+    "@suid/material": "^0.15.1",
     "solid-js": "^1.7.8"
   },
   "devDependencies": {
+    "@suid/system": "^0.10.5",
+    "@suid/vite-plugin": "^0.1.5",
+    "csstype": "^3.1.2",
     "typescript": "^5.0.2",
-    "unocss": "^0.56.5",
     "vite": "^4.4.5",
     "vite-plugin-solid": "^2.7.0"
   }

@@ -1,8 +1,7 @@
 /* @refresh reload */
+import "./global.css"
 import {render} from 'solid-js/web'
-
 import App from './App'
-import 'virtual:uno.css'
 import {Router} from "@solidjs/router";
 
 const root = document.getElementById('root')
