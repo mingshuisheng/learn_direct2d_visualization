@@ -109,7 +109,7 @@ export function DrawLine() {
           strokeWidth={50}
           strokeLen={1000}
           dashStyle={dashStyle()}
-          dashOffset={dashOffset()}
+          dashOffset={-dashOffset()}
           dashCap={dashCap()}
           endCap={endCap()}
           startCap={startCap()}
